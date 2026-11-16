@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="heroSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E9" />
+      <stop offset="60%" stop-color="#E8F3E5" />
+      <stop offset="100%" stop-color="#D5E8D1" />
+    </linearGradient>
+    <linearGradient id="trunkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#70A86B" />
+      <stop offset="100%" stop-color="#245B43" />
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5CA67" />
+      <stop offset="100%" stop-color="#EBA36B" />
+    </linearGradient>
+    <filter id="heroShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#245B43" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Organic Background Container -->
+  <path d="M40 80 C80 20 220 10 320 25 C450 45 560 90 570 210 C580 340 500 460 360 475 C210 490 80 470 35 370 C-5 280 0 140 40 80 Z" fill="url(#heroSky)" filter="url(#heroShadow)" stroke="#B8D6B2" stroke-width="2" />
+
+  <!-- Radiating Sun with concentric soft rings -->
+  <g transform="translate(450, 110)">
+    <circle cx="0" cy="0" r="70" fill="#F5CA67" opacity="0.15" />
+    <circle cx="0" cy="0" r="50" fill="#F5CA67" opacity="0.3" />
+    <circle cx="0" cy="0" r="32" fill="url(#sunGlow)" />
+    <!-- Sun Ray Sprinkles -->
+    <circle cx="45" cy="0" r="3" fill="#F5CA67" />
+    <circle cx="-45" cy="0" r="3" fill="#F5CA67" />
+    <circle cx="0" cy="45" r="3" fill="#F5CA67" />
+    <circle cx="0" cy="-45" r="3" fill="#F5CA67" />
+    <circle cx="32" cy="32" r="3" fill="#EBA36B" />
+    <circle cx="-32" cy="-32" r="3" fill="#EBA36B" />
+  </g>
+
+  <!-- Rolling Hills / Soil layers -->
+  <path d="M20 420 Q160 360 320 395 T580 410 L580 500 L20 500 Z" fill="#245B43" opacity="0.8" />
+  <path d="M0 450 Q180 390 380 430 T600 440 L600 500 L0 500 Z" fill="#245B43" />
+
+  <!-- Central Flourishing Tree of Growth (Seeds for Life) -->
+  <g transform="translate(290, 390)">
+    <!-- Tree Trunk -->
+    <path d="M-15 0 C-15 -60 -25 -120 -8 -170 C-4 -140 10 -130 18 -170 C24 -120 18 -60 18 0 Z" fill="url(#trunkGrad)" />
+    
+    <!-- Big Canopy Layers (Cloud/Foliage puffs) -->
+    <circle cx="0" cy="-210" r="75" fill="#70A86B" />
+    <circle cx="-65" cy="-190" r="60" fill="#245B43" opacity="0.95" />
+    <circle cx="65" cy="-190" r="60" fill="#245B43" opacity="0.95" />
+    <circle cx="-40" cy="-250" r="55" fill="#88BE84" />
+    <circle cx="40" cy="-250" r="55" fill="#70A86B" />
+    <circle cx="0" cy="-275" r="50" fill="#B8D6B2" />
+
+    <!-- Golden Seeds / Apples of Wisdom -->
+    <circle cx="-30" cy="-205" r="9" fill="#F5CA67" stroke="#FFF" stroke-width="2" />
+    <circle cx="35" cy="-225" r="9" fill="#F5CA67" stroke="#FFF" stroke-width="2" />
+    <circle cx="-10" cy="-260" r="8" fill="#EBA36B" stroke="#FFF" stroke-width="2" />
+    <circle cx="50" cy="-175" r="8" fill="#F5CA67" stroke="#FFF" stroke-width="2" />
+    <circle cx="-55" cy="-160" r="8" fill="#EBA36B" stroke="#FFF" stroke-width="2" />
+
+    <!-- Tree Sprout Stem Highlights -->
+    <path d="M-6 -170 Q-40 -185 -50 -160" stroke="#FFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4" />
+    <path d="M6 -170 Q40 -185 50 -160" stroke="#FFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4" />
+  </g>
+
+  <!-- Left: Young Seedling in Pot with Watering can / Nurturing -->
+  <g transform="translate(100, 310)">
+    <!-- Flower Pot -->
+    <polygon points="25,50 65,50 58,95 32,95" fill="#EBA36B" stroke="#245B43" stroke-width="2" />
+    <rect x="20" y="44" width="50" height="9" rx="3" fill="#F5CA67" stroke="#245B43" stroke-width="2" />
+    <!-- Seedling -->
+    <path d="M45 44 C45 25 40 15 45 0" stroke="#245B43" stroke-width="3" stroke-linecap="round" />
+    <path d="M45 25 C30 18 28 8 35 4 C44 4 45 18 45 25 Z" fill="#70A86B" />
+    <path d="M45 12 C58 6 62 16 55 20 C46 20 45 13 45 12 Z" fill="#245B43" />
+    <!-- Sparkles of Growth -->
+    <polygon points="50,-8 53,-2 59,-2 54,2 56,8 50,4 44,8 46,2 41,-2 47,-2" fill="#F5CA67" />
+  </g>
+
+  <!-- Right: Student Finalist with Book / Plant -->
+  <g transform="translate(420, 270)">
+    <!-- Student Head -->
+    <circle cx="45" cy="45" r="22" fill="#FCE4D6" />
+    <!-- Happy Hair -->
+    <path d="M25 42 C25 20 65 18 67 42 C60 30 50 28 36 32 C30 34 26 38 25 42 Z" fill="#26352B" />
+    <!-- Smiling Eyes -->
+    <path d="M35 42 Q40 45 42 42" stroke="#26352B" stroke-width="2" stroke-linecap="round" fill="none" />
+    <path d="M48 42 Q53 45 55 42" stroke="#26352B" stroke-width="2" stroke-linecap="round" fill="none" />
+    <path d="M42 52 Q46 56 50 52" stroke="#EBA36B" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Uniform Shirt -->
+    <path d="M22 68 C22 62 68 62 68 68 L72 135 L18 135 Z" fill="#FFFFFF" stroke="#B8D6B2" stroke-width="2" />
+    <!-- Badge on uniform -->
+    <circle cx="56" cy="84" r="5" fill="#70A86B" />
+    <!-- Green collar -->
+    <polygon points="45,67 52,78 45,90 38,78" fill="#245B43" />
+    <polygon points="32,67 45,74 45,67" fill="#70A86B" />
+    <polygon points="58,67 45,74 45,67" fill="#70A86B" />
+    <!-- Hand holding a magnifying glass -->
+    <circle cx="16" cy="98" r="12" stroke="#245B43" stroke-width="3" fill="rgba(184, 214, 178, 0.4)" />
+    <line x1="25" y1="107" x2="35" y2="117" stroke="#245B43" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- Flying Eco Butterflies -->
+  <g transform="translate(140, 140)">
+    <!-- Butterfly 1 -->
+    <ellipse cx="10" cy="10" rx="9" ry="6" fill="#F5CA67" transform="rotate(-30 10 10)" />
+    <ellipse cx="24" cy="10" rx="9" ry="6" fill="#F5CA67" transform="rotate(30 24 10)" />
+    <ellipse cx="12" cy="18" rx="6" ry="4" fill="#EBA36B" transform="rotate(-20 12 18)" />
+    <ellipse cx="22" cy="18" rx="6" ry="4" fill="#EBA36B" transform="rotate(20 22 18)" />
+    <line x1="17" y1="5" x2="17" y2="22" stroke="#26352B" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <g transform="translate(370, 180)">
+    <!-- Butterfly 2 -->
+    <ellipse cx="10" cy="10" rx="8" ry="5" fill="#70A86B" transform="rotate(-25 10 10)" />
+    <ellipse cx="22" cy="10" rx="8" ry="5" fill="#70A86B" transform="rotate(25 22 10)" />
+    <line x1="16" y1="6" x2="16" y2="20" stroke="#245B43" stroke-width="1.8" stroke-linecap="round" />
+  </g>
+
+  <!-- Floating Floating Badges with Icons -->
+  <g transform="translate(50, 200)">
+    <rect x="0" y="0" width="130" height="42" rx="21" fill="#FFFFFF" stroke="#B8D6B2" stroke-width="2" filter="url(#heroShadow)" />
+    <circle cx="21" cy="21" r="14" fill="#E8F3E5" />
+    <path d="M21 27 C21 17 15 14 11 13 C17 11 22 17 21 27 Z" fill="#245B43" />
+    <path d="M21 24 C21 16 26 13 29 13 C26 17 22 21 21 24 Z" fill="#70A86B" />
+    <text x="44" y="20" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#245B43">FINANCIAL</text>
+    <text x="44" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#70A86B">LITERACY</text>
+  </g>
+
+  <g transform="translate(380, 50)">
+    <rect x="0" y="0" width="145" height="42" rx="21" fill="#FFFFFF" stroke="#F5CA67" stroke-width="2" filter="url(#heroShadow)" />
+    <circle cx="21" cy="21" r="14" fill="#FFF8E9" />
+    <!-- Leaf spark inside badge -->
+    <path d="M21 28 C21 16 15 12 12 12 C18 10 22 18 21 28 Z" fill="#EBA36B" />
+    <text x="44" y="20" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#26352B">ENVIRONMENTAL</text>
+    <text x="44" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#EBA36B">AWARENESS</text>
+  </g>
+</svg>
